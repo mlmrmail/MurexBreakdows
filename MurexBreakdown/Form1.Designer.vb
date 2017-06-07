@@ -24,6 +24,9 @@ Partial Class Form1
     Private Sub InitializeComponent()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.dgv = New System.Windows.Forms.DataGridView()
+        Me.lst = New System.Windows.Forms.ListBox()
+        Me.Button2 = New System.Windows.Forms.Button()
+        Me.Button3 = New System.Windows.Forms.Button()
         CType(Me.dgv, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -39,17 +42,47 @@ Partial Class Form1
         'dgv
         '
         Me.dgv.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.dgv.Location = New System.Drawing.Point(45, 144)
+        Me.dgv.Location = New System.Drawing.Point(45, 251)
         Me.dgv.Name = "dgv"
         Me.dgv.RowTemplate.Height = 24
-        Me.dgv.Size = New System.Drawing.Size(977, 531)
+        Me.dgv.Size = New System.Drawing.Size(977, 424)
         Me.dgv.TabIndex = 1
+        '
+        'lst
+        '
+        Me.lst.FormattingEnabled = True
+        Me.lst.ItemHeight = 16
+        Me.lst.Location = New System.Drawing.Point(753, 32)
+        Me.lst.Name = "lst"
+        Me.lst.Size = New System.Drawing.Size(234, 196)
+        Me.lst.TabIndex = 2
+        '
+        'Button2
+        '
+        Me.Button2.Location = New System.Drawing.Point(45, 122)
+        Me.Button2.Name = "Button2"
+        Me.Button2.Size = New System.Drawing.Size(255, 74)
+        Me.Button2.TabIndex = 3
+        Me.Button2.Text = "Button2"
+        Me.Button2.UseVisualStyleBackColor = True
+        '
+        'Button3
+        '
+        Me.Button3.Location = New System.Drawing.Point(543, 32)
+        Me.Button3.Name = "Button3"
+        Me.Button3.Size = New System.Drawing.Size(178, 71)
+        Me.Button3.TabIndex = 4
+        Me.Button3.Text = "Button3"
+        Me.Button3.UseVisualStyleBackColor = True
         '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1086, 713)
+        Me.Controls.Add(Me.Button3)
+        Me.Controls.Add(Me.Button2)
+        Me.Controls.Add(Me.lst)
         Me.Controls.Add(Me.dgv)
         Me.Controls.Add(Me.Button1)
         Me.Name = "Form1"
@@ -61,4 +94,7 @@ Partial Class Form1
 
     Friend WithEvents Button1 As Button
     Friend WithEvents dgv As DataGridView
+    Friend WithEvents lst As ListBox
+    Friend WithEvents Button2 As Button
+    Friend WithEvents Button3 As Button
 End Class
